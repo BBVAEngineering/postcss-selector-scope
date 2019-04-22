@@ -1,0 +1,46 @@
+/* excluded */
+:root {
+  --some-var: red;
+}
+
+/* tags */
+a,
+b,
+strong,
+html,
+body,
+body .class,
+.class div {
+    color: red;
+}
+
+/* classes and IDs */
+.foo,
+#bar,
+#id .class,
+.class #id {
+    color: red;
+}
+
+/* pseudo and not */
+div::after,
+div:after {
+  content: "";
+}
+
+a:hover,
+::selection,
+:focus {
+  outline: 1px solid blue;
+}
+
+.any:not(.selected) {
+  color: red;
+}
+
+/* attributes */
+[class*="any"],
+[class^="any-"],
+[class*=" any"] {
+  color: red;
+}
