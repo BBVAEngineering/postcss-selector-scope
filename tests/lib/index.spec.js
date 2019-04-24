@@ -102,5 +102,21 @@ describe('postcss-selector-scope', () => {
 
 			expect(result.css).toBe(expected);
 		});
+
+		it('adds :not() to selectors that include default exclusions in their name', () => {
+			const input = stripIndent`
+				.class-with-numbers-234,
+				.class-with-from,
+				.class-with-to {}
+			`;
+			const expected = stripIndent`
+				.class-with-numbers-234:not(.style-scope),
+				.class-with-from:not(.style-scope),
+				.class-with-to:not(.style-scope) {}
+			`;
+			const result = process(input);
+
+			expect(result.css).toBe(expected);
+		});
 	});
 });
