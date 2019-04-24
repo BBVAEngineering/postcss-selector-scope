@@ -22,6 +22,12 @@ body .class,
     color: red;
 }
 
+.class-with-numbers-234,
+.class-with-from,
+.class-with-to {
+  color: red;
+}
+
 /* pseudo and not */
 div::after,
 div:after {
@@ -43,4 +49,22 @@ a:hover,
 [class^="any-"],
 [class*=" any"] {
   color: red;
+}
+
+/* keyframes */
+@keyframes foo {
+  0% {}
+  100% {}
+}
+
+@keyframes bar {
+  from {}
+  to {}
+}
+
+/* media queries */
+@media (min-width: 1024px) {
+  .class {
+    color: red;
+  }
 }
