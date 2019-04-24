@@ -1,11 +1,14 @@
 {
   "name": "postcss-selector-scope",
   "version": "0.0.0",
-  "description": "PostCSS plugin to scope styles using :not() selector",
+  "description": "PostCSS plugin to scope styles using :not() pseudo-class",
   "keywords": [
     "postcss",
     "postcss-plugin",
-    "css"
+    "css",
+    "style-scope",
+    "web components",
+    "shadow dom"
   ],
   "repository": {
     "type": "git",
