@@ -3,11 +3,7 @@ module.exports = {
 	testEnvironment: 'node',
 	coverageDirectory: './coverage',
 	collectCoverage: true,
-	coverageReporters: [
-		'lcov',
-		'text',
-		'text-summary'
-	],
+	coverageReporters: ['lcov', 'text', 'text-summary'],
 	coverageThreshold: {
 		global: {
 			branches: 100,
