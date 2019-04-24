@@ -20,15 +20,8 @@
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
     "lint:js": "eslint --max-warnings 0 **/*.js",
-    "precommit": "lint-staged",
     "commit": "git-cz",
     "semantic-release": "semantic-release"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E ${HUSKY_GIT_PARAMS}",
-      "pre-push": "npm run lint:js && npm t"
-    }
   },
   "lint-staged": {
     "lib/**/*.js": [
