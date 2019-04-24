@@ -1,6 +1,6 @@
 /* excluded */
 :root {
-  --some-var: red;
+	--some-var: red;
 }
 
 /* tags */
@@ -11,7 +11,7 @@ html,
 body,
 body .class,
 .class div {
-    color: red;
+	color: red;
 }
 
 /* classes and IDs */
@@ -19,52 +19,52 @@ body .class,
 #bar,
 #id .class,
 .class #id {
-    color: red;
+	color: red;
 }
 
 .class-with-numbers-234,
 .class-with-from,
 .class-with-to {
-  color: red;
+	color: red;
 }
 
 /* pseudo and not */
 div::after,
 div:after {
-  content: "";
+	content: '';
 }
 
 a:hover,
 ::selection,
 :focus {
-  outline: 1px solid blue;
+	outline: 1px solid blue;
 }
 
 .any:not(.selected) {
-  color: red;
+	color: red;
 }
 
 /* attributes */
-[class*="any"],
-[class^="any-"],
-[class*=" any"] {
-  color: red;
+[class*='any'],
+[class^='any-'],
+[class*=' any'] {
+	color: red;
 }
 
 /* keyframes */
 @keyframes foo {
-  0% {}
-  100% {}
+	0% {}
+	100% {}
 }
 
 @keyframes bar {
-  from {}
-  to {}
+	from {}
+	to {}
 }
 
 /* media queries */
 @media (min-width: 1024px) {
-  .class {
-    color: red;
-  }
+	.class {
+		color: red;
+	}
 }
