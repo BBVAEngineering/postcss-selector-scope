@@ -94,7 +94,7 @@ describe('postcss-selector-scope', () => {
 		});
 	});
 
-	describe('formatting', () => {
+	describe('processing', () => {
 		it('adds :not() to the last item of a selector with nested items', () => {
 			const input = 'div #foo .class {}';
 			const expected = 'div #foo .class:not(.style-scope) {}';
