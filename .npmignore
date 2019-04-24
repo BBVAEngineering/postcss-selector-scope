@@ -1,6 +1,8 @@
 # config files
 /.editorconfig
 /.eslintrc.js
+/.prettierrc
+/.releaserc
 /.gitignore
 /.travis.yml
 /.huskyrc.js
