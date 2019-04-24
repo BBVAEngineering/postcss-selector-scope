@@ -8,7 +8,8 @@ module.exports = {
 	},
 	extends: [
 		'plugin:node/recommended',
-		'eslint-config-bbva'
+		'eslint-config-bbva',
+		'plugin:prettier/recommended'
 	],
 	env: {
 		node: true
@@ -16,18 +17,18 @@ module.exports = {
 	rules: {
 		'no-sync': 0
 	},
-	overrides: [{
-		files: [
-			'tests/**/*.js'
-		],
-		env: {
-			jest: true
-		},
-		plugins: ['jest'],
-		rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
-			'no-process-env': 0,
-			'no-sync': 0,
-			'max-nested-callbacks': 0
-		})
-	}]
+	overrides: [
+		{
+			files: ['tests/**/*.js'],
+			env: {
+				jest: true
+			},
+			plugins: ['jest'],
+			rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
+				'no-process-env': 0,
+				'no-sync': 0,
+				'max-nested-callbacks': 0
+			})
+		}
+	]
 };
