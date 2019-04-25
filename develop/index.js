@@ -11,7 +11,7 @@ const outputPath = path.join(process.cwd(), 'tests/fixtures/develop-output');
 const input = fs.readFileSync(path.join(inputPath, `${fixture}.css`), 'utf-8');
 
 const write = (result) => {
-	console.log(`\n⚡️ ${fixture}-processed.css updated\n`);
+	console.log(`⚡️ ${fixture}-processed.css updated`);
 
 	fs.writeFileSync(path.join(outputPath, `${fixture}-processed.css`), result.css);
 };
