@@ -24,7 +24,21 @@ body .class,
 
 .class-with-numbers-234,
 .class-with-from,
-.class-with-to {
+.class-with-to,
+.fromsomething,
+.tosomething,
+.class-with-excluded,
+.class-withexcluded,
+.excluded,
+.parent .excluded,
+.item.excluded,
+.excluded-any,
+.excludedany,
+#id,
+#idnotme,
+[data-icon],
+[data-icon="icon"].any,
+.any:not(.something) {
 	color: red;
 }
 

@@ -42,6 +42,7 @@
   },
   "main": "lib/index.js",
   "dependencies": {
+    "escape-regex-string": "^1.0.6",
     "postcss": "^7.0.14"
   },
   "devDependencies": {
