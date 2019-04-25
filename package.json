@@ -24,7 +24,7 @@
     "semantic-release": "semantic-release"
   },
   "lint-staged": {
-    "lib/**/*.js": [
+    "**/*.js": [
       "npm run lint:js -- --fix",
       "git add"
     ]

@@ -19,13 +19,7 @@ const write = (result) => {
 postcss()
 	.use(
 		plugin({
-			exclude: [
-				'.excluded',
-				'[data-icon]',
-				':not(.something)',
-				'#id',
-				'strong'
-			]
+			exclude: ['.excluded', '[data-icon]', ':not(.something)', '#id', 'strong']
 		})
 	)
 	.process(input, { from: undefined })
