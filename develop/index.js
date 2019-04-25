@@ -9,7 +9,11 @@ const fixture = 'develop';
 const fixturePath = path.join(process.cwd(), 'tests', 'fixtures');
 const input = fs.readFileSync(path.join(fixturePath, `${fixture}.css`), 'utf-8');
 
-const write = (result) => fs.writeFileSync(path.join(fixturePath, `${fixture}-processed.css`), result.css, 'utf-8');
+const write = (result) => {
+	console.log(`\n⚡️ ${fixture}-processed.css updated\n`);
+
+	fs.writeFileSync(path.join(fixturePath, `${fixture}-processed.css`), result.css);
+};
 
 postcss()
 	.use(plugin)

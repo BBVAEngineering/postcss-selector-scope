@@ -32,6 +32,9 @@ describe('postcss-selector-scope', () => {
 					@keyframes any {
 						from {}
 						50% {}
+						66.34%,
+						75.123%,
+						67.2% {}
 						to {}
 					}
 				`;
