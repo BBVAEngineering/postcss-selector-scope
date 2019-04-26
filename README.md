@@ -5,7 +5,7 @@
 [![NPM version](https://badge.fury.io/js/postcss-selector-scope.svg)](https://badge.fury.io/js/postcss-selector-scope)
 [![Dependency Status](https://david-dm.org/BBVAEngineering/postcss-selector-scope.svg)](https://david-dm.org/BBVAEngineering/postcss-selector-scope)
 [![codecov](https://codecov.io/gh/BBVAEngineering/postcss-selector-scope/branch/master/graph/badge.svg)](https://codecov.io/gh/BBVAEngineering/postcss-selector-scope)
-<!-- [![Greenkeeper badge](https://badges.greenkeeper.io/BBVAEngineering/postcss-selector-scope.svg)](https://greenkeeper.io/) -->
+[![Greenkeeper badge](https://badges.greenkeeper.io/BBVAEngineering/postcss-selector-scope.svg)](https://greenkeeper.io/)
 
 [![NPM](https://nodei.co/npm/postcss-selector-scope.png?downloads=true&downloadRank=true)](https://nodei.co/npm/postcss-selector-scope/)
 
