@@ -121,5 +121,25 @@ describe('postcss-selector-scope', () => {
 
 			expect(result.css).toBe(expected);
 		});
+
+		it('adds :not() before pseudoelements', () => {
+			const input = stripIndent`
+				.icon::before,
+				.icon:before,
+				.icon::after,
+				.icon:after,
+				html::-webkit-scrollbar {}
+			`;
+			const expected = stripIndent`
+				.icon:not(.style-scope)::before,
+				.icon:not(.style-scope):before,
+				.icon:not(.style-scope)::after,
+				.icon:not(.style-scope):after,
+				html:not(.style-scope)::-webkit-scrollbar {}
+			`;
+			const result = process(input);
+
+			expect(result.css).toBe(expected);
+		});
 	});
 });
