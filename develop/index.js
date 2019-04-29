@@ -1,6 +1,6 @@
 'use strict';
 
-const fs = require('fs');
+const fs = require('fs-extra');
 const path = require('path');
 const postcss = require('postcss');
 const plugin = require('../lib');
@@ -13,7 +13,7 @@ const input = fs.readFileSync(path.join(inputPath, `${fixture}.css`), 'utf-8');
 const write = (result) => {
 	console.log(`⚡️ ${fixture}-processed.css updated`);
 
-	fs.writeFileSync(path.join(outputPath, `${fixture}-processed.css`), result.css);
+	fs.outputFileSync(path.join(outputPath, `${fixture}-processed.css`), result.css);
 };
 
 postcss()
