@@ -89,11 +89,11 @@ describe('postcss-selector-scope', () => {
 			const invalidOption = 5;
 			const exclude = ['text', /.a/, invalidOption];
 
-			expect(() => {
+			expect(() =>
 				process(input, {
 					exclude
-				});
-			}).toThrowError(/must be a string or a regular expression/);
+				})
+			).toThrowError(/must be a string or a regular expression/);
 		});
 	});
 
