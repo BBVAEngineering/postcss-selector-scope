@@ -1,6 +1,6 @@
 {
   "name": "postcss-selector-scope",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "PostCSS plugin to scope styles using :not() pseudo-class",
   "keywords": [
     "postcss",
