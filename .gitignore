@@ -1,3 +1,5 @@
 node_modules/
 coverage/
+develop-output/
+*-processed.css
 *.log

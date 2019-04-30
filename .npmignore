@@ -1,11 +1,15 @@
 # config files
 /.editorconfig
 /.eslintrc.js
+/.prettierrc
+/.releaserc
 /.gitignore
 /.travis.yml
 /.huskyrc.js
+/.commitlintrc.js
 /jest.config.js
 /CONTRIBUTING.md
 
 # tests
 /tests/
+develop/

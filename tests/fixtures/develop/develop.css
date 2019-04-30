@@ -1,0 +1,97 @@
+/* excluded */
+:root {
+	--some-var: red;
+}
+
+/* tags */
+a,
+b,
+strong,
+html,
+body,
+body .class,
+.class div {
+	color: red;
+}
+
+/* classes and IDs */
+.foo,
+#bar,
+#id .class,
+.class #id {
+	color: red;
+}
+
+.class-with-numbers-234,
+.class-with-from,
+.class-with-to,
+.fromsomething,
+.tosomething,
+.class-with-excluded,
+.class-withexcluded,
+.excluded,
+.parent .excluded,
+.item.excluded,
+.excluded-any,
+.excludedany,
+#id,
+#idnotme,
+[data-icon],
+[data-icon="icon"].any,
+.any:not(.something) {
+	color: red;
+}
+
+/* pseudo and not */
+div::after,
+div:after {
+	content: '';
+}
+
+a:hover,
+::selection,
+:focus {
+	outline: 1px solid blue;
+}
+
+.any:not(.selected) {
+	color: red;
+}
+
+/* attributes */
+[class*='any'],
+[class^='any-'],
+[class*=' any'] {
+	color: red;
+}
+
+/* keyframes */
+@keyframes foo {
+	0% {}
+	100% {}
+}
+
+@keyframes bar {
+	from {}
+	to {}
+}
+
+@keyframes any {
+	0%,
+	66.64%,
+	100% {
+	  color: red;
+	}
+	8.33%,
+	41.65%,
+	58.31% {
+	  color: red;
+	}
+}
+
+/* media queries */
+@media (min-width: 1024px) {
+	.class {
+		color: red;
+	}
+}
