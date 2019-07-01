@@ -67,7 +67,7 @@
     "fs-extra": "^8.0.1",
     "husky": "^2.1.0",
     "jest": "^24.7.1",
-    "lint-staged": "^8.1.5",
+    "lint-staged": "^9.0.0",
     "onchange": "^6.0.0",
     "prettier": "^1.17.0",
     "semantic-release": "^15.13.3"
