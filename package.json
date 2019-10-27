@@ -61,7 +61,7 @@
     "eslint": "^6.0.1",
     "eslint-config-bbva": "^2.0.4",
     "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-jest": "^22.13.0",
+    "eslint-plugin-jest": "^22.21.0",
     "eslint-plugin-node": "^9.0.1",
     "eslint-plugin-prettier": "^3.0.1",
     "fs-extra": "^8.0.1",
