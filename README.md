@@ -1,3 +1,5 @@
+# DEPRECATED
+
 # postcss-selector-scope
 
 [![Build Status](https://travis-ci.org/BBVAEngineering/postcss-selector-scope.svg?branch=master)](https://travis-ci.com/BBVAEngineering/postcss-selector-scope)
